@@ -36,7 +36,7 @@ to go in the opposite direction).
 public class MatrixFinder {
 
 
-    public static String Search( int[][] matrix, int target ) {
+    public static String search( int[][] matrix, int target ) {
 
 		int rowCheck = matrix.length - 1; //index of row where element is being looked at
 		int colCheck = 0;                 //index of column where element is being looked at
@@ -67,11 +67,11 @@ public class MatrixFinder {
                            {16,22,30,41,55},
                            {20,25,43,57,69} }; //Our Test Case
                            
-        System.out.println( Search(matrix, 32) ); // (2, 3)
-        System.out.println( Search(matrix, 1) ); // (0, 0)
-        System.out.println( Search(matrix, 55) ); // (3, 4)
-        System.out.println( Search(matrix, 11) ); // (1, 2)
-        System.out.println( Search(matrix, 42) ); // (-1, -1)
+        System.out.println( search(matrix, 32) ); // (2, 3)
+        System.out.println( search(matrix, 1) ); // (0, 0)
+        System.out.println( search(matrix, 55) ); // (3, 4)
+        System.out.println( search(matrix, 11) ); // (1, 2)
+        System.out.println( search(matrix, 42) ); // (-1, -1)
         
     }
 }

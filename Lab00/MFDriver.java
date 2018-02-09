@@ -3,38 +3,35 @@
 // Lab#00 -- But What Does The Data Say?
 // 2018-02-09
 
+
+
 public class MFDriver{
 
     public static void populate(int[][] matrix){
 
-	/*	int[] row = new int[matrix[0].length];
-	int num = 1;
-	for (int i = 0; i < row.length; i ++){
-	    row[i] = num;
-	    num ++;
-	    }*/
-
-	int num = 1;
-	for (int j = 0; i < matrix.length; j ++){
-	    // matrix[j] = row;
-	    for (int k = 0; k < matrix.length; k ++){
-		matrix[j][k] = num;
-		num++;
-	    }
-	}
+        int num = 1;
+        for (int i = 0; i < matrix.length; i ++){
+            for (int j = 0; j < matrix[i].length; j ++){
+                matrix[i][j] = num;
+                num++;
+            }
+        }
 
     }
     
     public static void main(String[] args){
 
-	long time;
-	int[][] m = new int[50][50];
-	populate(m);
-	time = System.currentTimeMillis();
-	//System.out.println(time);
-	System.out.println(MatrixFinder.search(m, 50));
-	time -= System.currentTimeMillis();
-	System.out.println(time);
+        long timeStart, timeEnd;
+        int[][] m;
+        System.out.println("Size(1D),Time(ns)");
+        for (int i = 1; i <= 1000; i ++){
+            m = new int[i][i];
+            populate(m);
+            timeStart = System.nanoTime();
+            MatrixFinder.search(m, i);
+            timeEnd = System.nanoTime();
+            System.out.println(i + "," + (timeEnd - timeStart));
+        }
     }
     
 }
