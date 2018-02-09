@@ -10,7 +10,8 @@ L00 -- But What Does the Data Say?
 The worst case runtime of MatrixFinder's Search() method increases at a linear rate with the size of the matrix.
 
 ### Background:
-Class MatrixFinder's Search() method is an algorithm that theoretically has a O(n) runtime. We begin by defining two variables "rowCheck" and "colCheck" which will
+Class MatrixFinder's Search() method is an algorithm that theoretically has a O(n) runtime.
+We begin by defining two variables "rowCheck" and "colCheck" which will
 hold the int index of the current row and column of the element that is
 being looked at and compared to the target value. Those values will be
 modified throughout the algorithm in order for the search method to go
