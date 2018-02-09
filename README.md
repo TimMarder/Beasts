@@ -42,4 +42,4 @@ Click the link below to see our team's data
 https://docs.google.com/spreadsheets/d/1vcX3OrGk1_d-Wzu3z44GhKxIOskOVNyuQnfW6qRpUMc/edit?ts=5a7da870#gid=1460164168
 
 ### Conclusions:
-According to the graph, most of the data support our hypothesis that runtime increases at a linear rate with respect to the 1-dimensional size of the matrix. However, the runtime is significantly larger than what it should be when the size is less than 1500 and when the size is 2100. We cannot explain why this happens.
+According to the graph, most of the data support our hypothesis that runtime increases at a linear rate with respect to the 1-dimensional size of the matrix. However, the runtime is significantly larger than what it should be when the size is less than 1500 and when the size is 2100. According to the qaf post, https://groups.google.com/a/stuy.edu/forum/#!topic/apcs17-18/Kli6zgzQ6GY, we think that the system has to allocate memory at the beginning which is why the earlier runtime is so large.
