@@ -14,5 +14,6 @@ Experiment Methodology:
 
 Results:
 
+![](Data/chart.png)
 
 Conclusions:
