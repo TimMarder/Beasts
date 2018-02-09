@@ -13,7 +13,8 @@ The worst case runtime of MatrixFinder's Search() method increases at a linear r
 
 
 ## Experiment Methodology:
-
+We created a method that populates a matrix according to the given rule:  increasing from up to down and left to right.
+We tested matrices with size 1000 * 1000, 1100 * 1100 ... 10000 * 10000. For each size we made 10 trials and took the average.
 
 ## Results:
 
