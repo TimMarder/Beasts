@@ -3,17 +3,17 @@ APCS2 pd2
 L00 -- But What Does the Data Say?
 2018-02-09 F
 
-Hypothesis:
+## Hypothesis:
 
 
-Background:
+## Background:
 
 
-Experiment Methodology:
+## Experiment Methodology:
 
 
-Results:
+## Results:
 
 ![](Data/chart.png)
 
-Conclusions:
+## Conclusions:
